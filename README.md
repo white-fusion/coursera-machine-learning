@@ -9,6 +9,8 @@ My solutions to the programming assignments of Coursera's Machine Learning cours
   <li>Exercise 7 - K-means Clustering and Principal Component Analysis</li>
   <li>Exercise 8 - Anomaly Detection and Recommender Systems</li>
 </ul>
+
 Course Website: [Machine Learning](https://www.coursera.org/learn/machine-learning)
+
 Instructor Website:[Andrew Ng](https://www.andrewng.org)
    
