@@ -25,9 +25,22 @@ X = [ones(m, 1) X];
 %       are in rows, then, you can use max(A, [], 2) to obtain the max 
 %       for each row.
 %       
+yhat = sigmoid(X * all_theta');
+maxes = max(yhat, [], 2); %take maximums of each row into a column
 
+for i=1:m,
+    for j=1:num_labels,
+        if yhat(i,j) == maxes(i),
+            p(i) = j;
+        end;
+    end;    
+end;    
 
-
+       
+%Alternate method: 
+%all_preds = sigmoid(all_theta * X');
+%[max_vals, max_ndxs] = max(all_preds);
+%p = max_ndxs';
 
 
 

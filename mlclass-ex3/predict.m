@@ -22,6 +22,19 @@ p = zeros(size(X, 1), 1);
 %
 
 
+X = [ones(m, 1) X];%bias unit
+
+for j=1:m,
+
+	%first layer propagation
+	z2 = sigmoid(X(j,:) * Theta1');
+
+	%bias to hidden layer
+	z2 = [1 z2];
+
+	%hidden layer propagation and getting max (candidate)
+	[trash,p(j)] = max(sigmoid(z2 * Theta2'));% If called with one input and two output arguments, `max' also returns the first index of the maximum value(s).
+end;
 
 
 
