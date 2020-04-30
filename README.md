@@ -12,5 +12,5 @@ My solutions to the programming assignments of Coursera's Machine Learning cours
 
 Course Website: [Machine Learning](https://www.coursera.org/learn/machine-learning)
 
-Instructor Website:[Andrew Ng](https://www.andrewng.org)
+Instructor Website: [Andrew Ng](https://www.andrewng.org)
    
