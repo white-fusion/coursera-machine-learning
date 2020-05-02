@@ -33,7 +33,7 @@ for j=1:m,
 	z2 = [1 z2];
 
 	%hidden layer propagation and getting max (candidate)
-	[trash,p(j)] = max(sigmoid(z2 * Theta2'));% If called with one input and two output arguments, `max' also returns the first index of the maximum value(s).
+	[trash,p(j)] = max(sigmoid(z2 * Theta2'));% If called with one input and two output arguments, `max' returns index of the maximum value.
 end;
 
 
