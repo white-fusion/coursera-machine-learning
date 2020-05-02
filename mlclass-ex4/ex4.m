@@ -141,6 +141,8 @@ initial_nn_params = [initial_Theta1(:) ; initial_Theta2(:)];
 %  code you've written in nnCostFunction.m to return the partial
 %  derivatives of the parameters.
 %
+
+%Comment out gradient checking after one iteration
 fprintf('\nChecking Backpropagation... \n');
 
 %  Check gradients by running checkNNGradients
@@ -183,7 +185,7 @@ fprintf('\nTraining Neural Network... \n')
 
 %  After you have completed the assignment, change the MaxIter to a larger
 %  value to see how more training helps.
-options = optimset('MaxIter', 50);
+options = optimset('MaxIter', 100);
 
 %  You should also try different values of lambda
 lambda = 1;
